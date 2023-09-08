@@ -1,0 +1,21 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>icons/062f7696361385309c262b0a3cd1db5a.jpg</file>
+    <file>icons/photo_٢٠٢٣-٠٧-٢١_١٣-٥٨-٢٩ (2).jpg</file>
+    <file>icons/result__1_-removebg-preview.png</file>
+    <file>C:/Users/Fannan/Downloads/female-fitness.png</file>
+    <file>icons/female-fitness (1).png</file>
+    <file>icons/training.png</file>
+    <file>icons/users.png</file>
+    <file>icons/062f7696361385309c262b0a3cd1db5a.jpg</file>
+    <file>icons/c9869a5e3bb56fa7d6d0669f70c5cd42.jpg</file>
+    <file>icons/protein.png</file>
+    <file>icons/weight-lifting.png</file>
+    <file>icons/file.png</file>
+    <file>icons/history.png</file>
+    <file>icons/money2.png</file>
+    <file>icons/12.png</file>
+    <file>icons/photo_٢٠٢٣-٠٧-٢١_١٣-٥٨-٢٧.jpg</file>
+    <file>icons/deadline.png</file>
+  </qresource>
+</RCC>
