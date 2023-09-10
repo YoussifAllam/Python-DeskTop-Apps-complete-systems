@@ -1,0 +1,36 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>notification.png</file>
+    <file>notification-bell.png</file>
+    <file>logout.png</file>
+    <file>Figure_1.png</file>
+    <file>cross.png</file>
+    <file>delivery-box.png</file>
+    <file>ddd.png</file>
+    <file>menu.png</file>
+    <file>ss.png</file>
+    <file>money.png</file>
+    <file>222.png</file>
+    <file>settings-5-xxl.png</file>
+    <file>profile.png</file>
+    <file>conference-xxl.png</file>
+    <file>guest-xxl.png</file>
+    <file>group.png</file>
+    <file>password-code.png</file>
+    <file>seo-report.png</file>
+    <file>teamwork.png</file>
+    <file>business-and-finance.png</file>
+    <file>profit.png</file>
+    <file>sales.png</file>
+    <file>add-to-cart.png</file>
+    <file>product.png</file>
+    <file>categories.png</file>
+    <file>box.png</file>
+    <file>dashboard-xxl.png</file>
+    <file>paper.png</file>
+    <file>2.png</file>
+    <file>dashboard.png</file>
+    <file>home.png</file>
+    <file>1.png</file>
+  </qresource>
+</RCC>
