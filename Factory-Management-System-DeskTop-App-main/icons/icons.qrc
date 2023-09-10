@@ -1,0 +1,33 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>immigration.png</file>
+    <file>availability.png</file>
+    <file>out-of-stock.png</file>
+    <file>production.png</file>
+    <file>material-management.png</file>
+    <file>experiment.png</file>
+    <file>money2.png</file>
+    <file>warehouse.png</file>
+    <file>supplier.png</file>
+    <file>workers.png</file>
+    <file>2.png</file>
+    <file>3.png</file>
+    <file>11.png</file>
+    <file>15.png</file>
+    <file>33.png</file>
+    <file>boxes.png</file>
+    <file>businesspackagewarningbox_negocio_paquete_advertencia_2337.ico</file>
+    <file>customer_person_people_man_you_1625.ico</file>
+    <file>customer_person_people_woman_you_1627.png</file>
+    <file>history.png</file>
+    <file>man (1).png</file>
+    <file>medal.png</file>
+    <file>medal1.png</file>
+    <file>PlotTypes_Bar_MultipleBars.png</file>
+    <file>profit.png</file>
+    <file>Profit-Graph.gif</file>
+    <file>team.png</file>
+    <file>users.png</file>
+    <file>profit.png</file>
+  </qresource>
+</RCC>
