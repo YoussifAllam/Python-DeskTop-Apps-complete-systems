@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'G:\BRMAGA\python\UI projects\Project\Ui_ver2.ui'
+# Form implementation generated from reading ui file 'G:\BRMAGA\python\UI projects\Project\version 3\Ui_ver3.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Frame(object):
     def setupUi(self, Frame):
         Frame.setObjectName("Frame")
-        Frame.resize(603, 473)
+        Frame.resize(986, 685)
         Frame.setStyleSheet(".QPushButton{\n"
 "background-color: transparent;\n"
 "color: rgb(255, 255, 255);\n"
@@ -42,31 +42,34 @@ class Ui_Frame(object):
 "}\n"
 "")
         self.graphicsView_2 = QtWidgets.QGraphicsView(Frame)
-        self.graphicsView_2.setGeometry(QtCore.QRect(-10, -10, 621, 491))
+        self.graphicsView_2.setGeometry(QtCore.QRect(-10, -10, 1001, 701))
         self.graphicsView_2.setStyleSheet("border:1px solid #ffffff;\n"
-"background-color: rgb(27, 90, 144);")
+"background-color: rgb(27, 90, 144);\n"
+"")
         self.graphicsView_2.setObjectName("graphicsView_2")
         self.Browse_btn = QtWidgets.QPushButton(Frame)
-        self.Browse_btn.setGeometry(QtCore.QRect(420, 150, 101, 41))
+        self.Browse_btn.setGeometry(QtCore.QRect(520, 373, 101, 41))
         self.Browse_btn.setStyleSheet("font: 63 12pt \"Segoe UI Semibold\";\n"
 "")
         self.Browse_btn.setObjectName("Browse_btn")
         self.path_lineEdit = QtWidgets.QLineEdit(Frame)
-        self.path_lineEdit.setGeometry(QtCore.QRect(20, 150, 371, 41))
+        self.path_lineEdit.setGeometry(QtCore.QRect(30, 373, 471, 41))
+        self.path_lineEdit.setStyleSheet("font: 13pt \"Myanmar Text\";")
+        self.path_lineEdit.setText("")
         self.path_lineEdit.setObjectName("path_lineEdit")
         self.label = QtWidgets.QLabel(Frame)
-        self.label.setGeometry(QtCore.QRect(20, 110, 131, 51))
-        self.label.setStyleSheet("color: rgb(255, 255, 255);font: 15pt \"Myanmar Text\";")
+        self.label.setGeometry(QtCore.QRect(30, 333, 181, 51))
+        self.label.setStyleSheet("color: rgb(255, 255, 255);font: 18pt \"Myanmar Text\";")
         self.label.setObjectName("label")
         self.Browse_btn_2 = QtWidgets.QPushButton(Frame)
-        self.Browse_btn_2.setGeometry(QtCore.QRect(180, 380, 241, 61))
+        self.Browse_btn_2.setGeometry(QtCore.QRect(370, 600, 241, 61))
         self.Browse_btn_2.setStyleSheet("font: 63 12pt \"Segoe UI Semibold\";\n"
 "")
         self.Browse_btn_2.setObjectName("Browse_btn_2")
         self.comboBox = QtWidgets.QComboBox(Frame)
-        self.comboBox.setGeometry(QtCore.QRect(20, 250, 121, 31))
+        self.comboBox.setGeometry(QtCore.QRect(30, 183, 151, 31))
         self.comboBox.setStyleSheet("background-color: rgb(255, 255, 255);\n"
-"font: 13pt \"Myanmar Text\";")
+"font: 15pt \"Myanmar Text\";")
         self.comboBox.setFrame(False)
         self.comboBox.setObjectName("comboBox")
         self.comboBox.addItem("")
@@ -84,27 +87,63 @@ class Ui_Frame(object):
         self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.label_3 = QtWidgets.QLabel(Frame)
-        self.label_3.setGeometry(QtCore.QRect(20, 227, 181, 21))
-        self.label_3.setStyleSheet("font: 15pt \"Myanmar Text\";\n"
+        self.label_3.setGeometry(QtCore.QRect(30, 140, 231, 41))
+        self.label_3.setStyleSheet("font: 18pt \"Myanmar Text\";\n"
 "color: rgb(255, 255, 255);")
         self.label_3.setObjectName("label_3")
         self.label_2 = QtWidgets.QLabel(Frame)
-        self.label_2.setGeometry(QtCore.QRect(180, 320, 231, 41))
-        self.label_2.setStyleSheet("color: rgb(255, 255, 255);font: 15pt \"Myanmar Text\";")
+        self.label_2.setGeometry(QtCore.QRect(420, 520, 181, 51))
+        self.label_2.setStyleSheet("color: rgb(255, 255, 255);font: 18pt \"Myanmar Text\";")
         self.label_2.setText("")
         self.label_2.setObjectName("label_2")
         self.label_4 = QtWidgets.QLabel(Frame)
-        self.label_4.setGeometry(QtCore.QRect(20, 10, 131, 51))
-        self.label_4.setStyleSheet("color: rgb(255, 255, 255);font: 15pt \"Myanmar Text\";")
+        self.label_4.setGeometry(QtCore.QRect(30, 233, 171, 51))
+        self.label_4.setStyleSheet("color: rgb(255, 255, 255);\n"
+"font: 18pt \"Myanmar Text\";")
         self.label_4.setObjectName("label_4")
         self.Excel_path_Browse_btn = QtWidgets.QPushButton(Frame)
-        self.Excel_path_Browse_btn.setGeometry(QtCore.QRect(420, 50, 101, 41))
+        self.Excel_path_Browse_btn.setGeometry(QtCore.QRect(520, 273, 101, 41))
         self.Excel_path_Browse_btn.setStyleSheet("font: 63 12pt \"Segoe UI Semibold\";\n"
 "")
         self.Excel_path_Browse_btn.setObjectName("Excel_path_Browse_btn")
         self.Excel_path_lineEdit = QtWidgets.QLineEdit(Frame)
-        self.Excel_path_lineEdit.setGeometry(QtCore.QRect(20, 50, 371, 41))
+        self.Excel_path_lineEdit.setGeometry(QtCore.QRect(30, 273, 471, 41))
+        self.Excel_path_lineEdit.setStyleSheet("font: 13pt \"Myanmar Text\";")
+        self.Excel_path_lineEdit.setText("")
         self.Excel_path_lineEdit.setObjectName("Excel_path_lineEdit")
+        self.start_btn = QtWidgets.QPushButton(Frame)
+        self.start_btn.setGeometry(QtCore.QRect(370, 463, 241, 41))
+        self.start_btn.setStyleSheet("font: 63 12pt \"Segoe UI Semibold\";\n"
+"")
+        self.start_btn.setObjectName("start_btn")
+        self.branch_comboBox = QtWidgets.QComboBox(Frame)
+        self.branch_comboBox.setGeometry(QtCore.QRect(30, 80, 151, 31))
+        self.branch_comboBox.setStyleSheet("background-color: rgb(255, 255, 255);\n"
+"font: 15pt \"Myanmar Text\";")
+        self.branch_comboBox.setFrame(False)
+        self.branch_comboBox.setObjectName("branch_comboBox")
+        self.branch_comboBox.addItem("")
+        self.branch_comboBox.setItemText(0, "")
+        self.branch_comboBox.addItem("")
+        self.branch_comboBox.addItem("")
+        self.branch_comboBox.addItem("")
+        self.branch_comboBox.addItem("")
+        self.branch_comboBox.addItem("")
+        self.branch_comboBox.addItem("")
+        self.branch_comboBox.addItem("")
+        self.branch_comboBox.addItem("")
+        self.label_5 = QtWidgets.QLabel(Frame)
+        self.label_5.setGeometry(QtCore.QRect(30, 37, 231, 41))
+        self.label_5.setStyleSheet("font: 18pt \"Myanmar Text\";\n"
+"color: rgb(255, 255, 255);")
+        self.label_5.setObjectName("label_5")
+        self.label_6 = QtWidgets.QLabel(Frame)
+        self.label_6.setGeometry(QtCore.QRect(480, 20, 521, 161))
+        self.label_6.setStyleSheet("color: rgb(255, 255, 255);font: 15pt \"Myanmar Text\";")
+        self.label_6.setText("")
+        self.label_6.setPixmap(QtGui.QPixmap(":/newPrefix/Untitled-1-03-2.png"))
+        self.label_6.setScaledContents(True)
+        self.label_6.setObjectName("label_6")
 
         self.retranslateUi(Frame)
         QtCore.QMetaObject.connectSlotsByName(Frame)
@@ -127,6 +166,17 @@ class Ui_Frame(object):
         self.comboBox.setItemText(10, _translate("Frame", "October"))
         self.comboBox.setItemText(11, _translate("Frame", "November"))
         self.comboBox.setItemText(12, _translate("Frame", "December"))
-        self.label_3.setText(_translate("Frame", "Chosse The Month.."))
+        self.label_3.setText(_translate("Frame", "Choose The Month.."))
         self.label_4.setText(_translate("Frame", "Excel File Path.."))
         self.Excel_path_Browse_btn.setText(_translate("Frame", "Browse"))
+        self.start_btn.setText(_translate("Frame", "Start The Process"))
+        self.branch_comboBox.setItemText(1, _translate("Frame", "Asser"))
+        self.branch_comboBox.setItemText(2, _translate("Frame", "Dammam"))
+        self.branch_comboBox.setItemText(3, _translate("Frame", "Hai jamaa"))
+        self.branch_comboBox.setItemText(4, _translate("Frame", "Hail "))
+        self.branch_comboBox.setItemText(5, _translate("Frame", "Jedah"))
+        self.branch_comboBox.setItemText(6, _translate("Frame", "Madina"))
+        self.branch_comboBox.setItemText(7, _translate("Frame", "Makkah"))
+        self.branch_comboBox.setItemText(8, _translate("Frame", "Riyadah"))
+        self.label_5.setText(_translate("Frame", "Choose The Branch.."))
+import icons_rc

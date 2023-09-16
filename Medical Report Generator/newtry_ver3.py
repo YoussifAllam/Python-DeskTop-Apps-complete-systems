@@ -18,13 +18,14 @@ from pdf2image.exceptions import (
     PDFSyntaxError
 )
 import easyocr
+import random
+import Ui_ver3
+import threading
 
-import Ui_ver2
-
-#FORM_CLASS,_ = uic.loadUiType(path.join(path.dirname(__file__),'Ui_ver2.ui'))
+#FORM_CLASS,_ = uic.loadUiType(path.join(path.dirname(__file__),'Ui_ver3.ui'))
 
 
-class Mainapp(QMainWindow, Ui_ver2.Ui_Frame):
+class Mainapp(QMainWindow, Ui_ver3.Ui_Frame):
     #QWidget
     bool_task_ended = False
     Check_Name = []
@@ -37,7 +38,8 @@ class Mainapp(QMainWindow, Ui_ver2.Ui_Frame):
     Cheack_Discharge_Date = []
     excel_file_path = ''
     problems= []
-    
+    Branch_name = ''
+    file_name_number = 0
     patient_names_dict = {'Name': [] , 'MRN': [] ,'Check Name':[] , 'Check MRN':[] , 'Check Sputum':[] , 'Check Approved':[] , 'Check Discharge Date':[] ,
                           'Check LABORATORY is Found':[] ,'Check if Pdf Name is Match with Patiant MRN':[]   }
     Folderpath = ''
@@ -49,11 +51,13 @@ class Mainapp(QMainWindow, Ui_ver2.Ui_Frame):
         self.Browse_btn_2.setVisible(False)
         self.run_browse_btn()
         self.run_open_btn()
-        self.setWindowTitle( "Medical Report Generator" )
-        self.setFixedSize( 603, 477)
+        self.setWindowTitle( " SGH Auditing " )
+        self.setFixedSize( 986, 683)
         self.Excel_path_Browse_btn.clicked.connect(self.Handel_Browse_excell_file_Btn)
+        self.start_btn.clicked.connect(self.start_thread)
 
-
+    # def thread(self):
+    #     t1 =threading.Thread(target=)
         
     def run_browse_btn(self):
         self.Browse_btn.clicked.connect(self.Handel_Browse_Btn)
@@ -61,31 +65,43 @@ class Mainapp(QMainWindow, Ui_ver2.Ui_Frame):
     
     def Handel_Browse_excell_file_Btn(self):
         excel_file_path =QFileDialog.getOpenFileName(self, 'Open file', '', 'Excel Files (*.xlsx *.xlsm *.sxc *.ods *.csv *.tsv)')
-        print(excel_file_path[0] , '===========')
+        #print(excel_file_path[0] , '===========')
         self.Excel_path_lineEdit.setText(excel_file_path[0])
           
     def Handel_Browse_Btn(self):
-        if self.comboBox.currentText() == '':
-            QMessageBox.information(self, 'i','You should Choose Month First. ')
-            return
-        
-        if self.Excel_path_lineEdit.text() == '':
-            QMessageBox.information(self, 'i','You should enter Excel file path First.')
-            return
-        
         save_place = QFileDialog.getExistingDirectory(self, 'Select folder')
         self.path_lineEdit.setText(save_place)
+        Mainapp.Folderpath = save_place
+    
+    def check_is_all_data_valid(self):
+        if self.comboBox.currentText() == '':
+            QMessageBox.information(self, 'i','You should Choose Month First. ')
+            return False
+        
+        elif self.Excel_path_lineEdit.text() == '':
+            QMessageBox.information(self, 'i','You should enter Excel file path First.')
+            return False
+        
+        elif self.branch_comboBox.currentText() == '':
+            QMessageBox.information(self, 'i','You should Choose Branch name First.')    
+            return False
         
         excel_file_path = self.Excel_path_lineEdit.text()
-        num_OF_Unique_Patient_names = self.read_excel_data(excel_file_path)
-        
-        Mainapp.Folderpath = save_place
-        pdfs_names = self.get_namesof_pdf_fiels(save_place)
-        
+        num_OF_Unique_Patient_names = self.read_excel_data(excel_file_path)   
+        pdfs_names = self.get_namesof_pdf_fiels(Mainapp.Folderpath)
         if len(pdfs_names) != num_OF_Unique_Patient_names : 
-             QMessageBox.information(self, 'i','Number of Patients does not match number of pdf files . ')
-             return
-
+            QMessageBox.information(self, 'i','Number of Patients does not match number of pdf files . ')
+            return False ,pdfs_names
+        return  True , pdfs_names
+    
+    def start_thread(self):
+        start_thread = threading.Thread(target=self.Start_func)
+        start_thread.start()       
+        
+    def Start_func(self):
+        bool , pdfs_names = self.check_is_all_data_valid()
+        if not bool:
+            return
         patient_names =[]
         patient_MRNs =[]
         problems_Lists = []
@@ -94,26 +110,28 @@ class Mainapp(QMainWindow, Ui_ver2.Ui_Frame):
             sleep(2)
             self.label_2.setText(f'Done {i} of {len(pdfs_names)}')
             QApplication.processEvents()
-            sleep(1)
             
-            patient_name , patient_MRN ,  problems_List = self.extract_pdf_to_txt(pdfs_names[i] ,save_place  , i)
+            
+            patient_name , patient_MRN ,  problems_List = self.extract_pdf_to_txt(pdfs_names[i] ,Mainapp.Folderpath   , i)
             self.check_if_fileMRN_isSame_PatiantMRN(pdfs_names[i] ,patient_MRN )
             #print(patient_names,patient_MRNs)
             patient_names.append( patient_name)
-            patient_MRNs .append(  str(patient_MRN).replace('SAO2.','').strip('0'))
+            patient_MRNs .append(  str(patient_MRN).replace('SAO1.','').replace('SAO2.','').replace('SAO3.','').replace('SAO4.','').replace('SAO5.','').replace('SAO6.','').replace('SAO7.','').replace('SAO8.','').strip('0'))
             problems_Lists .append(  problems_List)
         
         self.add_to_dict(patient_names , patient_MRNs ,  problems_Lists )
-        self.write_resualts_in_excel()
         self.label_2.setText('finshed')
+        
+        
+        self.write_resualts_in_excel()
+        
         Mainapp.bool_task_ended = True 
         
         self.label_2.setText(f'Done {len(pdfs_names)} of {len(pdfs_names)}')
         QApplication.processEvents()
-        sleep(1)
         self.Browse_btn_2.setVisible(True)
         QApplication.processEvents()    
-        QMessageBox.information(self, 'i','Done ')
+        
         
     def read_excel_data(self, excel_file_path):
         df = pd.read_excel(excel_file_path)
@@ -179,23 +197,15 @@ class Mainapp(QMainWindow, Ui_ver2.Ui_Frame):
         if Mainapp.bool_task_ended == True : 
             self.open_excel_sheet()
             self.Browse_btn_2.setVisible(False)
-        else : 
-            error_dialog = QErrorMessage()
-            error_dialog.showMessage('Please Wait until the process ended ')
-            error_dialog.exec()
-    
+          
     def write_resualts_in_excel(self):
+        Mainapp.file_name_number = random.randint(1, 100000)
+        Mainapp.Branch_name = self.branch_comboBox.currentText()
         df = pd.DataFrame(Mainapp.patient_names_dict)
-        try:
-             df.to_excel(f'{Mainapp.Folderpath}\my_excel_sheet.xlsx')
-        except:
-           
-            error_dialog = QErrorMessage()
-            error_dialog.showMessage('There is Excel file with the same name in folder please delete it ')
-            error_dialog.exec()
-
+        df.to_excel(f'{Mainapp.Folderpath}\{Mainapp.Branch_name}_{str(Mainapp.file_name_number)}.xlsx')
+        
     def open_excel_sheet(self):
-        os.startfile(f'{Mainapp.Folderpath}\my_excel_sheet.xlsx')
+        os.startfile(f'{Mainapp.Folderpath}\{Mainapp.Branch_name}_{str(Mainapp.file_name_number)}.xlsx')
         
     def getdate(self , report_date , pdf_num):
             curr_month = self.GetDate_from_comboBox()
@@ -230,7 +240,7 @@ class Mainapp(QMainWindow, Ui_ver2.Ui_Frame):
         indix = str(txt_lines).find('Visa Type')
         if indix != -1:
             if 'APPROVED' not in txt_lines [indix : indix+30] and 'Approved' not in txt_lines [indix : indix+80]  :
-                Mainapp.Check_Approved.append('The Patient is not APPROVED')
+                Mainapp.Check_Approved.append('The Patient is not APPROVED1')
                 
             else:
                 indix2 = txt_lines.find('Visa Remarks')
@@ -239,12 +249,12 @@ class Mainapp(QMainWindow, Ui_ver2.Ui_Frame):
                     
                     indix3 = txt_lines.find(' Approved for 0 days')
                     if indix3 != -1:
-                        Mainapp.Check_Approved.append('The Patient is not APPROVED')
+                        Mainapp.Check_Approved.append('The Patient is not APPROVED2')
                     else : Mainapp.Check_Approved.append('Done')
                     
                 else : Mainapp.Check_Approved.append('Done')
                 
-        else : Mainapp.Check_Approved.append('The Patient is not APPROVED')
+        else : Mainapp.Check_Approved.append('The Patient is not APPROVED3')
                     
     def check_if_LABORATORY_isFound(self,txt_lines):
         indix = txt_lines.find('LABORATORY DEPARTMENT')
@@ -271,13 +281,11 @@ class Mainapp(QMainWindow, Ui_ver2.Ui_Frame):
         
     def extract_pdf_to_txt(self,pdf_name, folder_path ,pdf_num):
         images = convert_from_path(f'{folder_path}\{pdf_name}', 500, poppler_path=r'C:\Program Files\poppler-21.10.0\Library\bin')
-        # g:\BRMAGA\python\UI projects\Project\poppler-21.10.0\Library\bin
-        # G:\BRMAGA\python\UI projects\Project\poppler-21.10.0\Library\bin
         images_number=len(images)
         
         for i in range(images_number):
             if i == 0 or  i == 1 or  i == 2 or i == images_number-1 or  i == images_number-2 or  i == images_number-3 or i == images_number-4 :  
-              images[i].save('page'+str(i)+'.jpg','JPEG')
+              images[i].save(f'{folder_path}\page'+str(i)+'.jpg','JPEG')
             
         scrapped =[]
         reader = easyocr.Reader(['en']) 
@@ -285,7 +293,7 @@ class Mainapp(QMainWindow, Ui_ver2.Ui_Frame):
         
         for i in range(images_number):
             if i == 0  or  i == images_number-1 or  i == images_number-2 or  i == images_number-3 or i == images_number-4 :  
-                page_txt = reader.readtext('page'+str(i)+'.jpg', detail = 0)
+                page_txt = reader.readtext(f'{folder_path}\page'+str(i)+'.jpg', detail = 0)
                 scrapped.append(reader.readtext('page'+str(i)+'.jpg', detail = 0))
                 #print(page_txt)
                 if i == 0:
@@ -298,11 +306,13 @@ class Mainapp(QMainWindow, Ui_ver2.Ui_Frame):
                   
             if i == 1 :
                 self.extract_pdf_to_txt_way1(pdf_name,folder_path,patient_name , patient_MRN ,Discharge_date,pdf_num)
+                
+          
                     
             
         scrapped = str(scrapped)    
         self.check_Q1004(scrapped)
-        self.check_Approved(scrapped)   
+        #self.check_Approved(scrapped)   
         self.check_if_LABORATORY_isFound(scrapped)
         
         return patient_name , patient_MRN ,  Mainapp.problems
@@ -320,9 +330,11 @@ class Mainapp(QMainWindow, Ui_ver2.Ui_Frame):
                 page = pdfReader.pages[page_num]
                 page_txt = page.extract_text()
                 self.cheack(page_txt , page_num+1 ,patient_name , patient_MRN  ,pdf_num)
+                pdf_txt += page_txt
             else:
+                self.check_Approved(pdf_txt)
                 return
-        
+             
     def getdata (self,s):
         Patient_Name , Patient_MRN , Discharge_Time ='','',''
         name_index = s[0].index("Patient Name")
@@ -377,5 +389,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
-    
+   # main()
+    app = QApplication(sys.argv)
+    main_thread = threading.Thread(target=main)
+    main_thread.start()
