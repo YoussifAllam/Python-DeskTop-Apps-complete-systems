@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1358</width>
+    <height>928</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+.QPushButton {
+   background-color: rgb(222, 193, 161);
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+
+	font: 14pt &quot;Droid Sans Arabic&quot;;
+	border-radius:15px;
+	border:1px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	
+	
+	color: rgb(255, 255, 255);
+	
+	border-color: rgb(255, 255, 255);
+	font-size:20px;
+	
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.QPushButton:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	
+
+	border-color:rgb(31, 31, 31);
+	color: rgb(31, 31, 31);
+		
+	background-color: rgb(24, 24, 24);
+
+}
+.QPushButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+QLineEdit {
+    border: 1px solid rgb(255, 255, 255);
+border-radius:13px;
+font: 15pt &quot;Droid Sans Arabic&quot;;
+	color: rgb(255, 255, 255);
+}
+.QComboBox{
+font-size:15px;
+  font: 14pt &quot;Droid Sans Arabic&quot;;
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    text-align: center;
+	color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+
+}
+
+.QTableWidget{
+font-size:18px;
+}</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>40</y>
+     <width>1381</width>
+     <height>851</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(38, 202, 218);
+background-color: rgb(77, 208, 225);
+background-color: rgb(41, 182, 246);
+background-color: rgb(27, 90, 144);</string>
+   </property>
+   <property name="tabPosition">
+    <enum>QTabWidget::South</enum>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>المخزن</string>
+    </attribute>
+    <widget class="QLabel" name="label_64">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>20</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>الوحده الرئسيه</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_65">
+     <property name="geometry">
+      <rect>
+       <x>890</x>
+       <y>150</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>عدد الوحدات </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="storge_tab_showall_btn">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>350</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>عرض الكل </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_67">
+     <property name="geometry">
+      <rect>
+       <x>1190</x>
+       <y>260</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>سعر بيع الوحده</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_63">
+     <property name="geometry">
+      <rect>
+       <x>1220</x>
+       <y>20</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>أسم الصنف </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="storge_tab_unit_price_line">
+     <property name="geometry">
+      <rect>
+       <x>1050</x>
+       <y>300</y>
+       <width>291</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_66">
+     <property name="geometry">
+      <rect>
+       <x>1220</x>
+       <y>140</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>سعر الشراء</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="storge_tab_total_numof_unit_line">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>180</y>
+       <width>291</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="storge_tab_buy_price_line">
+     <property name="geometry">
+      <rect>
+       <x>1050</x>
+       <y>180</y>
+       <width>291</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="Storge_Table">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>410</y>
+       <width>1361</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(178, 235, 242);
+background-color: rgb(255, 255, 255);
+font: 17pt &quot;Droid Sans Arabic&quot;;
+</string>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string>اسم الصنف</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>سعر الشراء</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>سعر البيع </string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>الوحده الرئسيه</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>عدد الوحدات</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QLineEdit" name="storge_tab_product_name_line">
+     <property name="geometry">
+      <rect>
+       <x>1050</x>
+       <y>50</y>
+       <width>291</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="storge_tab_add_btn">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>350</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>أضافه</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="storge_tab_unit_type_comboBox">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>50</y>
+       <width>231</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>زجاجه</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>علبه</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>كرتونه</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>كيلو</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>جرام</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>قطعه</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="storge_tab_update_btn">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>350</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>تعديل</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="storge_tab_add_ToComboBox_btn_6">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>50</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>أضافه</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="storge_tab_search_btn">
+     <property name="geometry">
+      <rect>
+       <x>560</x>
+       <y>350</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>بحث</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>البيع</string>
+    </attribute>
+    <widget class="QPushButton" name="selling_tab_showall_btn">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>350</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>عرض الكل </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="selling_tab_sell_btn">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>350</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>بيع</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="selling_tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>410</y>
+       <width>1361</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(178, 235, 242);
+background-color: rgb(255, 255, 255);
+font: 17pt &quot;Droid Sans Arabic&quot;;
+</string>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string>اسم الصنف</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>سعر الشراء</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>سعر البيع </string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>الوحده الرئسيه</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>عدد الوحدات</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="selling_tab_search_btn">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>350</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>بحث</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="storge_tab_add__to_selltable_btn">
+     <property name="geometry">
+      <rect>
+       <x>810</x>
+       <y>10</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>أضافه</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_69">
+     <property name="geometry">
+      <rect>
+       <x>1250</x>
+       <y>310</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>عدد الوحدات </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_70">
+     <property name="geometry">
+      <rect>
+       <x>1240</x>
+       <y>210</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>سعر البيع </string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="storge_tab_buy_price_line_2">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>250</y>
+       <width>291</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="storge_tab_total_numof_unit_line_2">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>340</y>
+       <width>291</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sellingTab_total_monay_of_invoice">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>60</y>
+       <width>241</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_71">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>20</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>الأجمالي</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="small_sell_tble">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>50</y>
+       <width>571</width>
+       <height>261</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(178, 235, 242);
+background-color: rgb(255, 255, 255);
+font: 13pt &quot;Droid Sans Arabic&quot;;
+</string>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string>اسم الصنف</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>سعره</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>عدد الوحدات</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>الاجمالي</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="storge_tab_delete_selltable_btn">
+     <property name="geometry">
+      <rect>
+       <x>640</x>
+       <y>10</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>حذف</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="storge_tab_print_selltable_btn">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>10</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>طباعه</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_73">
+     <property name="geometry">
+      <rect>
+       <x>1240</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>أسم العميل</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="selling_tab_customer_name_line">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>50</y>
+       <width>291</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="selling_tab_product_name_line">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>150</y>
+       <width>291</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_74">
+     <property name="geometry">
+      <rect>
+       <x>1240</x>
+       <y>120</y>
+       <width>111</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>اسم الصنف</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sellingTab_paid_amount_invoice_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>180</y>
+       <width>241</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_75">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>140</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>المبلغ المدفوع</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>سجل الفواتير</string>
+    </attribute>
+    <widget class="QTableWidget" name="invoice_table">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>280</y>
+       <width>1371</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(178, 235, 242);
+background-color: rgb(255, 255, 255);
+font: 17pt &quot;Droid Sans Arabic&quot;;
+</string>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string>التاريخ</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>المبلغ الاجمالي</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>المنتجات </string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="storge_tab_showall_btn_4">
+     <property name="geometry">
+      <rect>
+       <x>950</x>
+       <y>130</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>عرض الكل </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="storge_tab_add_btn_5">
+     <property name="geometry">
+      <rect>
+       <x>1180</x>
+       <y>130</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>بحث</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="invoice_tab_data_lineedit">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>50</y>
+       <width>291</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_72">
+     <property name="geometry">
+      <rect>
+       <x>1240</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>التاريخ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="storge_tab_print_btn_5">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>130</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>طباعه</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>العملاء</string>
+    </attribute>
+    <widget class="QPushButton" name="customer_tab_delete_btn">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>230</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QPushButton{background-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+}
+
+.QPushButton:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	
+		
+	background-color: rgb(38, 38, 38);
+}</string>
+     </property>
+     <property name="text">
+      <string>حذف</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="customers_tab_total_amount_LINE">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>140</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_28">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>100</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>المبلغ المدفوع</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="customers_tab_paid_amount_LINE">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>140</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_48">
+     <property name="geometry">
+      <rect>
+       <x>1210</x>
+       <y>110</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>المبلغ  الكلي</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="customers_tab_Name_LINE">
+     <property name="geometry">
+      <rect>
+       <x>1070</x>
+       <y>40</y>
+       <width>291</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_47">
+     <property name="geometry">
+      <rect>
+       <x>1300</x>
+       <y>10</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">.QLabel{
+font-size:15px;
+font: 14pt &quot;Droid Sans Arabic&quot;;
+		color: rgb(255, 255, 255);
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}</string>
+     </property>
+     <property name="text">
+      <string>ألاسم</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="customer_tab_showall_btn">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>230</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>عرض الكل </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="customer_tab_search_btn">
+     <property name="geometry">
+      <rect>
+       <x>740</x>
+       <y>230</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>بحث</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget_28">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>280</y>
+       <width>1361</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(178, 235, 242);
+background-color: rgb(255, 255, 255);
+font: 17pt &quot;Droid Sans Arabic&quot;;
+</string>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <property name="horizontalScrollMode">
+      <enum>QAbstractItemView::ScrollPerPixel</enum>
+     </property>
+     <column>
+      <property name="text">
+       <string>الاسم</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>المبلغ الاجمالي</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>المتبقي</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="customer_tab_add_btn">
+     <property name="geometry">
+      <rect>
+       <x>1180</x>
+       <y>230</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>أضافه</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="customer_tab_UPDATE_btn">
+     <property name="geometry">
+      <rect>
+       <x>960</x>
+       <y>230</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>نجديد</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1361</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="open_storge_tab__btn">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+.QPushButton {
+   background-color: rgb(222, 193, 161);
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+
+	font: 9pt &quot;Droid Sans Arabic&quot;;
+	border-radius:7px;
+	border:0px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	
+	
+	color: rgb(0, 0, 0);
+	
+	border-color: rgb(255, 255, 255);
+	font-size:20px;
+	
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.QPushButton:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	
+	color: rgb(255, 255, 255);
+		
+	background-color: rgb(27, 90, 144);
+
+}
+.QPushButton:active {
+	position:relative;
+	top:1px;
+}</string>
+   </property>
+   <property name="text">
+    <string>المخزن</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="open_sell_tab__btn">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>0</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+.QPushButton {
+   background-color: rgb(222, 193, 161);
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+
+	font: 9pt &quot;Droid Sans Arabic&quot;;
+	border-radius:7px;
+	border:0px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	
+	
+	color: rgb(0, 0, 0);
+	
+	border-color: rgb(255, 255, 255);
+	font-size:20px;
+	
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.QPushButton:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	
+	color: rgb(255, 255, 255);
+		
+	background-color: rgb(27, 90, 144);
+
+}
+.QPushButton:active {
+	position:relative;
+	top:1px;
+}</string>
+   </property>
+   <property name="text">
+    <string>بيع</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="open_invoice_tab__btn">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>0</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+.QPushButton {
+   background-color: rgb(222, 193, 161);
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+
+	font: 9pt &quot;Droid Sans Arabic&quot;;
+	border-radius:7px;
+	border:0px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	
+	
+	color: rgb(0, 0, 0);
+	
+	border-color: rgb(255, 255, 255);
+	font-size:20px;
+	
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.QPushButton:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	
+	color: rgb(255, 255, 255);
+		
+	background-color: rgb(27, 90, 144);
+
+}
+.QPushButton:active {
+	position:relative;
+	top:1px;
+}</string>
+   </property>
+   <property name="text">
+    <string>سجل الفواتير</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="open_customers_tab__btn">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>0</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+.QPushButton {
+   background-color: rgb(222, 193, 161);
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+
+	font: 9pt &quot;Droid Sans Arabic&quot;;
+	border-radius:7px;
+	border:0px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	
+	
+	color: rgb(0, 0, 0);
+	
+	border-color: rgb(255, 255, 255);
+	font-size:20px;
+	
+	padding:0px 0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.QPushButton:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	
+	color: rgb(255, 255, 255);
+		
+	background-color: rgb(27, 90, 144);
+
+}
+.QPushButton:active {
+	position:relative;
+	top:1px;
+}</string>
+   </property>
+   <property name="text">
+    <string>العملاء</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
