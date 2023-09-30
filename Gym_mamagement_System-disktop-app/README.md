@@ -43,21 +43,31 @@ https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/9692
 
 ![5](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/33937d12-e4ed-4a99-a07e-ed99f51de520)
 
+
 5- تسجيل كل المنتجات الموجوده في مخزن الصاله (اسم الصنف ,الوحده الرئسيه للبيع ,سعر الشراء والبيع , تاريخ الانتاج والانتهاء , عدد الوحدات الموجده في المخزن )
 
-![Screenshot (5)](https://github.com/YoussifAllam/Gym_mamagement_System-disktop-app/assets/96921160/c0610295-b2f2-4e57-bb00-c3d312adda24)
+![6](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/8f40bc89-16ec-4ae7-ba29-79103c3bc945)
+
 
 بمجرد الضغط علي زر بيع سوف يتم تقليل عدد الوحدات المباعه من العدد الكلي من المخزن وتسجيل هذه العمليه في السجل 
-![Screenshot (29)](https://github.com/YoussifAllam/Gym_mamagement_System-disktop-app/assets/96921160/de8de4a9-37b0-4056-868e-48de77dbc92a)
 
+![7](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/805d4091-6063-487f-aa26-d593a2b5faef)
 
-![مخزن](https://github.com/YoussifAllam/Gym_mamagement_System-disktop-app/assets/96921160/3040db3d-3b56-454f-b2ff-2b76ff8569f5)
 
 6- وجود نافذه لأظهار  كل الاعبين الذي تم انتهاء الأشتراك الخاص بهم يتم تحديث هذه النافذه تلقائيا بشكل يومي 
 
-![Screenshot (27)](https://github.com/YoussifAllam/Gym_mamagement_System-disktop-app/assets/96921160/96078a16-2ea7-4e92-b3ce-a4eed1495732)
+![8](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/783a8cc9-1168-491d-946a-8bf2676df179)
+
 
 7- وجود نافذه لتسجيل كل المصروفات (اسم العمليه مصل مرتب او فاتوره كهرباء.... , تاريخ العمليه ,  المبلغ المدفوع , اضافه ملاحظات )
+![9](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/75ee9494-8b64-4a29-8cc6-218075dac2bc)
 
-![Screenshot (30)](https://github.com/YoussifAllam/Gym_mamagement_System-disktop-app/assets/96921160/1f954ea6-72f5-436d-91d7-a8935c0008ef)
+8-نافذه لنظام محاسبه للصاله بقوم بحساب كل الاتي بشكل تلقائي
+كل المطلوب هو الضغط علي زر جرد الشهر الحالي 
+* يمكنك من خلالها حساب مبلغ مصروفات خلال الشهر الحالي
+* حساب مبلغ المبيعات
+* حساب مبلغ الاشتركات
+* ثم يقوم البرنامج بحسب صافي الارباح بشكل تلقائي
+* 
+![10](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/0a291dd9-4d4f-48e4-ba9e-2fd2cada63ad)
 
