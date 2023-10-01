@@ -7,6 +7,7 @@ https://api.whatsapp.com/send?phone=201110647576
 
 ## Screen Shots
 
-![Screenshot 2023-08-04 161100](https://github.com/YoussifAllam/Pharmacy-Management-system-Desktop-app-Ui/assets/96921160/f96dde61-c23c-4acc-9fa9-377321b69582)
+![1](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/a5481751-d3c5-47bf-96dc-897f69c8cfed)
 
-![Screenshot 2023-08-04 160644](https://github.com/YoussifAllam/Pharmacy-Management-system-Desktop-app-Ui/assets/96921160/be651a87-f5ba-424a-a619-8ec0998eb15c)
+![2](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/57082c20-d9d9-4530-bc7a-f3dbdb39031d)
+
