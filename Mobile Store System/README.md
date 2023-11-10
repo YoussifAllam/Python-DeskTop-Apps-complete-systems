@@ -1,14 +1,7 @@
-# My-Udacity-Bikeshare-Project
-My Udacity project that I have made to improve my skills in pandas for a nano-degree Udacity program. Please don't use it to copy the project. 
-# overview
-
-## Introduction
-This Python script is written for Project 2 (Term 1) of Udacity's Data Analyst Nanodegree (DAND) and is used to explore data related to bike share systems for Chicago, New York City, and Washington. It imports data from csv files and compute descriptive statistics from the data. It also takes in users' raw input to create an interactive experience in the terminal to present these statistics.
-
-## Dataset
-The datasets used for this script contain bike share data for the first six months of 2017. Some data wrangling has been performed by Udacity's staff before being provided to the students of DAND. 
-## The Requirements
-![alt text](https://raw.githubusercontent.com/NidalShater/My-Udacity-Bikeshare-Project/master/req.jpg)
-
-
-__NOTE: unzip dataset.zip to get all cities dataset before running the script__
+# Screen Shots
+![t, h;ha](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/8a81690a-292f-4587-8548-4bf2c406b536)
+![البيع](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/9add59be-74db-4f68-b15c-46bcb6c62714)
+![السجل](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/cc98f6f7-fbd3-404f-8fcd-cc6026094333)
+![جرد](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/7f288e89-7ae8-40b1-91e9-723e0d959152)
+![مخزن](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/b9704282-d17f-4547-99e6-5f320f8a5ce9)
+![مصروفات](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/864a6563-37a5-4a8d-905e-359999d9130f)
