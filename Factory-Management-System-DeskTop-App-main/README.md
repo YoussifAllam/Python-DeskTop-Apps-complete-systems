@@ -26,7 +26,8 @@ https://www.linkedin.com/in/youssif-hassan-495697249/
 حيث يوجد super admin  لديه كل الصلاحيات 
 ويوجود مستخدمين أخرين لديهم بعض الصلاحيات يحددها ال super admin 
 
-![Screenshot 2023-09-05 194748](https://github.com/YoussifAllam/Factory-Management-System-DeskTop-App/assets/96921160/4b71d991-51e3-40e1-ac2c-a1bc770ad2ba)
+![Screenshot 2023-11-10 192324](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/ffc43c72-0e2a-4b87-84ca-42a98ef226a7)
+
 
 
 
@@ -41,7 +42,8 @@ https://www.linkedin.com/in/youssif-hassan-495697249/
 
 4: في الصف العلوي يظهر بعض من اهم المعلومات
    
-![وجهه رئسيه](https://github.com/YoussifAllam/Factory-Management-System-DeskTop-App/assets/96921160/fa0e4b01-a51b-4254-bf18-0388719e9a2a)
+![Screenshot 2023-11-10 191832](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/98cf68cc-b37f-4368-8390-4a126fd15e57)
+
 
 
 ## الخدامات المقدمه في البرنامج 
@@ -56,7 +58,7 @@ https://www.linkedin.com/in/youssif-hassan-495697249/
 
 زر تحديث البيانات يقوم بأعاده حساب جميع المعلومات لكل العمال مثل ( عدد ايام الحضور و المبلغ الكلي والنهائي ) وجعلتها بالزر حتي لا اجلعها تتم  بشكل تلقائي في كل مره يتم فتح البرنامج مما قد يؤدي الي بطئ فيي العمليات اذا كنت تقوم بعمليه اخري علي البرنامج في نفس الوقت  
 
-![1عمال](https://github.com/YoussifAllam/Factory-Management-System/assets/96921160/d170ef3a-5465-42b3-b3c9-cd004c6b79af)
+![Screenshot 2023-11-10 191852](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/5a15dfe4-821c-4f4f-a793-927d4098b207)
 
 
 ### 2 )
@@ -74,7 +76,8 @@ https://www.linkedin.com/in/youssif-hassan-495697249/
 
 3: في حاله عمليه المرتجع يضاف الي مخزن الخامات الكميه التي قام العميل بأرجعها ويقوم البرنامج بطرح المبلغ من المبلغ المتبقي علي العميل 
 
-![عملاء](https://github.com/YoussifAllam/Factory-Management-System/assets/96921160/0b3f54a2-75ad-4196-a805-da44d3110fb9)
+![Screenshot 2023-11-10 191913](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/46f4d04f-51aa-446a-a4c9-f0a4da42baa0)
+
 
 ### 3 )
 تسجيل بينات وعماليات الموردين نفس العمليات التي تتم علي العملاء 
@@ -86,10 +89,25 @@ https://www.linkedin.com/in/youssif-hassan-495697249/
 2: خصم مبلغ العمليه من الخزنه وتسجيل في سجل الخزنه انه تم خصم هذا المبلغ من اجل عمليه معا المورد بأسمه 
 
 3: تسجيل في سجل المخزن ااضافه الخامات بكمياته وانه تم شرائها من المورد بأسمه 
+![مورديين](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/9d387783-14e2-4b38-b0b4-739f2ae41714)
 
-![موردين](https://github.com/YoussifAllam/Factory-Management-System-DeskTop-App/assets/96921160/242338cb-198a-4aac-84c9-27ef234d56da)
+
+![خلطات](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/7eeb33d9-492b-4651-bf14-9c1d4b236d7a)
+
+![سجل المخزن](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/eec2bdfb-c1f8-47d8-8d04-e8c85bc4ef79)
+
+![مخزن](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/e4be869b-f249-4389-84e9-668979607fac)
+
+![تقرير يومي](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/accfb837-8637-41e0-bc60-c8c042960fdf)
+
+![جرد](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/0dda4e6c-6e3d-42a0-941e-f8c0736bf6cb)
+
+![مصروفات](https://github.com/YoussifAllam/Python-DeskTop-Apps-complete-systems/assets/96921160/edc34659-20c2-43d6-b5cf-607d2d14a317)
+
+
+
+
 
 ### 4 )
 
-![Screenshot 2023-09-09 140149](https://github.com/YoussifAllam/Factory-Management-System-DeskTop-App/assets/96921160/a7e3e387-ed45-4804-b67c-5a41323bc1ee)
 
